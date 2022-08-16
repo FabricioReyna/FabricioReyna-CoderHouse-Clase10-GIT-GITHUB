@@ -4,9 +4,6 @@
   margin: 0;
   padding: 0;
 }
-body {
- 
-}
 .GridPadre {
   display: grid;
   grid-template-areas:
