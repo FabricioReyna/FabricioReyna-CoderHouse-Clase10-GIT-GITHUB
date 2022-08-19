@@ -14,11 +14,9 @@
     "footer footer"
     "footer footer";
     width: 100%;
-
-  height: 100%;
-  background-color: #fff;
-  font-family: "Open Sans", sans-serif;
-
+    height: 100%;
+    background-color: #fff;
+    font-family: "Open Sans", sans-serif;
     height: 100%;
     background-color: #fff;
     font-family: "Open Sans", sans-serif;
@@ -61,50 +59,24 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+.nav-item-estilos a{
+  color: #000;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
 .principal img {
   width: 100px;
   height: 100px;
 }
-.principal .nav .nav-menu {
-  background: #232526; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #414345,
-    #232526
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #414345,
-    #232526
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  width: 100%;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.9em;
-}
-.nav-menu ul {
-  display: flex;
-}
-.nav-menu ul li {
-  list-style: none;
-  padding: 10px;
-}
-.nav-menu ul li a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1em;
-  letter-spacing: 2px;
-  width: 100%;
-}
-.nav-menu ul li a:hover {
-  transition: 1s;
-  font-size: 1.4em;
+.nav-item-estilos a:hover {
+  transition: 2s;
+  font-size: 1.5em;
   font-weight: bold;
   text-decoration: underline;
+  cursor: pointer;
 }
 /* INDEX INCIO */
 .iniciomain {
@@ -152,7 +124,6 @@ footer {
   width: 100%;
   max-width: 800px;
   height: 90%;
-  border: 1px solid black;
 }
 .container .container-titulo {
   text-decoration: underline;
@@ -317,6 +288,9 @@ input[type="button"]:hover {
   text-align: center;
   font-size: 2rem;
 }
+.carousel-item img{
+  height: 38em;
+}
 
 .list-producto ul {
   display: flex;
@@ -407,7 +381,13 @@ input[type="button"]:hover {
     width: 100%;
     max-width: 700px;
     height: 80%;
-    border: none;
+    margin-bottom: 30px;
+  }
+  .container .container-titulo {
+    text-decoration: underline;
+    font-size: 4.3em;
+    padding: 0px;
+    text-align: center;
   }
   .nombre,
   .email,
@@ -467,14 +447,12 @@ input[type="button"]:hover {
 /* CELULAR */
 @media (max-width: 600px) {
   .principal {
-    width: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
   }
   .principal img {
     width: 80px;
     height: 80px;
-    padding-top: 10px;
-    margin-top: 20px;
   }
   .principal .nav{
     padding-top: 20px;
@@ -580,6 +558,10 @@ input[type="button"]:hover {
   .titulo-ubicacion h1 {
     font-size: 3rem;
   }
+  .carousel-item img{
+    width: 100%;
+    height: 90vh;
+  }
   .descripcion-ubicacion {
     height: 40vh;
     display: inline-block;
@@ -612,4 +594,18 @@ input[type="button"]:hover {
     max-width: none;
     height: 200px;
   }
+}
+
+/* Scroll */
+::-webkit-scrollbar{
+  background: transparent;
+} 
+::-webkit-scrollbar-button{
+  background: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background: #e65245;
+}
+h1 ,p{
+  color: #000 !important;
 }
