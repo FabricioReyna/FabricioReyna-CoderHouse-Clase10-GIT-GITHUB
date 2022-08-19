@@ -4,10 +4,8 @@
   margin: 0;
   padding: 0;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> Fabri
+
 .GridPadre {
   display: grid;
   grid-template-areas:
@@ -16,15 +14,14 @@
     "footer footer"
     "footer footer";
     width: 100%;
-<<<<<<< HEAD
+
   height: 100%;
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
-=======
+
     height: 100%;
     background-color: #fff;
     font-family: "Open Sans", sans-serif;
->>>>>>> Fabri
 }
 header {
   grid-area: header;
