@@ -3,8 +3,8 @@
 * {
   margin: 0;
   padding: 0;
+  color: #000;
 }
-
 
 .GridPadre {
   display: grid;
@@ -13,13 +13,13 @@
     "main main"
     "footer footer"
     "footer footer";
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    font-family: "Open Sans", sans-serif;
-    height: 100%;
-    background-color: #fff;
-    font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
 }
 header {
   grid-area: header;
@@ -60,7 +60,7 @@ footer {
   justify-content: center;
 }
 
-.nav-item-estilos a{
+.nav-item-estilos a {
   color: #000;
   font-weight: bold;
   font-size: 1.4em;
@@ -205,7 +205,7 @@ input[type="button"]:hover {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.servicios-img img:hover{
+.servicios-img img:hover {
   transition: 3s;
   transform: scale(1.2);
 }
@@ -225,15 +225,82 @@ input[type="button"]:hover {
   font-size: 1.5em;
   padding: 10px 0 0 10px;
 }
-.descripcion-servicios .list-servicios-1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.descripcion-servicios .list-servicios {
+  margin: 0;
+  padding: 0;
 }
-.list-servicios-1 li {
-  list-style: circle;
-  margin: 20px;
+.nav-link-stylos{
+  color: #000;
+  padding-top: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
+.nav-link-stylos:hover{
+  color: #c21500;
+}
+.list-conect-styles h4 {
+  text-align: center;
+  font-weight: bold;
+}
+.list-conect-styles:nth-child(1) {
+  background: #ddd6f3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #faaca8,
+    #ddd6f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #faaca8,
+    #ddd6f3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+}
+.list-conect-styles:nth-child(2) {
+  background: #50c9c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #96deda,
+    #50c9c3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #96deda,
+    #50c9c3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 10px;
+}
+.list-conect-styles:nth-child(3) {
+  background: #ddd6f3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #faaca8,
+    #ddd6f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #faaca8,
+    #ddd6f3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+}
+.list-conect-styles:nth-child(4) {
+  background: #50c9c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #96deda,
+    #50c9c3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #96deda,
+    #50c9c3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 10px;
+}
+
 /* Ubicacion */
 .titulo-ubicacion {
   text-align: center;
@@ -281,14 +348,14 @@ input[type="button"]:hover {
   font-size: 5rem;
   padding-bottom: 10px;
 }
-.titulo-producto img{
+.titulo-producto img {
   width: 100%;
 }
 .descripcion-producto h2 {
   text-align: center;
   font-size: 2rem;
 }
-.carousel-item img{
+.carousel-item img {
   height: 38em;
 }
 
@@ -454,7 +521,7 @@ input[type="button"]:hover {
     width: 80px;
     height: 80px;
   }
-  .principal .nav{
+  .principal .nav {
     padding-top: 20px;
   }
   .principal .nav .nav-menu {
@@ -547,18 +614,12 @@ input[type="button"]:hover {
     width: 100%;
     height: 30vh;
   }
-  .descripcion-servicios .list-servicios-1 {
-    display: block;
-    text-align: center;
-  }
-  .list-servicios-1 li {
-    list-style: none;
-  }
+
   /* Ubicacion */
   .titulo-ubicacion h1 {
     font-size: 3rem;
   }
-  .carousel-item img{
+  .carousel-item img {
     width: 100%;
     height: 90vh;
   }
@@ -597,15 +658,16 @@ input[type="button"]:hover {
 }
 
 /* Scroll */
-::-webkit-scrollbar{
-  background: transparent;
-} 
-::-webkit-scrollbar-button{
+::-webkit-scrollbar {
   background: transparent;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-button {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
   background: #e65245;
 }
-h1 ,p{
+h1,
+p {
   color: #000 !important;
 }
