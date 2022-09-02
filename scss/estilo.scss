@@ -17,9 +17,6 @@
   height: 100%;
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
-  height: 100%;
-  background-color: #fff;
-  font-family: "Open Sans", sans-serif;
 }
 header {
   grid-area: header;
@@ -51,14 +48,7 @@ footer {
   width: 100%;
   max-width: 1980px;
 }
-.principal .nav {
-  height: 100px;
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .nav-item-estilos a {
   color: #000;
@@ -672,3 +662,5 @@ h1,
 p {
   color: #000 !important;
 }
+
+@import "mapget";
