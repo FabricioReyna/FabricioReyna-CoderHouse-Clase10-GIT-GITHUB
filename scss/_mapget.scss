@@ -1,0 +1,11 @@
+/* MAP - GET*/
+$principa-nav:(height: 100px, tamaño: 100%, max-width: 1000px, display: flex, lineo-items: center, justifico: center);
+
+.principal .nav{
+    height: map-get($principa-nav, height );
+    width: map-get($principa-nav , tamaño );
+    max-width: map-get($principa-nav, max-width);
+    display: map-get($principa-nav , display );
+    align-items: map-get($principa-nav , lineo-items );
+    justify-content: map-get($principa-nav , justifico );
+}
