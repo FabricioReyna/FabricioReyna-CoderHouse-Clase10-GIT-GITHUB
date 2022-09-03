@@ -1,0 +1,7 @@
+.titulo-and-iframe {
+    text-align: center;
+}
+.titulo-and-iframe h1 {
+    font-size: 5rem;
+    @extend .titulo-and-iframe;
+}

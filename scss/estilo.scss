@@ -56,10 +56,7 @@ footer {
   font-size: 1.4em;
 }
 
-.principal img {
-  width: 100px;
-  height: 100px;
-}
+
 
 .nav-item-estilos a:hover {
   transition: 2s;
@@ -73,12 +70,8 @@ footer {
   margin-top: 10px;
   padding-top: 10px;
 }
-.iniciomain .titulo-and-iframe {
-  text-align: center;
-}
-.titulo-and-iframe h1 {
-  font-size: 5rem;
-}
+
+
 .titulo-and-iframe iframe {
   width: 660px;
   height: 310px;
@@ -664,3 +657,5 @@ p {
 }
 
 @import "mapget";
+@import "mixin";
+@import "extend";
