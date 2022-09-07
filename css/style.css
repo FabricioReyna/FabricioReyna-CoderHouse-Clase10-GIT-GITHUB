@@ -69,12 +69,20 @@ footer {
 .Paragraph h2 {
   font-size: 2rem;
   padding: 10px;
-  text-decoration: underline;
-  text-transform: capitalize; }
+  text-transform: uppercase; }
 
 .Paragraph p {
   font-size: 30px;
   padding: 10px; }
+
+.Paragraph .Inicio-funda {
+  display: flex;
+  justify-content: space-evenly; }
+  .Paragraph .Inicio-funda li {
+    list-style: none; }
+    .Paragraph .Inicio-funda li img {
+      width: 20em;
+      height: 25em; }
 
 /* CONTACTO ESTILOS */
 .main {
@@ -262,13 +270,17 @@ input[type="button"]:hover {
   display: grid;
   grid-template-areas: "h2 h2" "p img"; }
 
+.container-fluid {
+  margin: 0;
+  padding: 0; }
+
 .descripcion-ubicacion h2 {
   font-size: 2em;
   text-align: center;
   grid-area: h2; }
 
 .descripcion-ubicacion p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   grid-area: p; }
 
 .descripcion-ubicacion img {
@@ -411,8 +423,13 @@ input[type="button"]:hover {
     text-align: center;
     grid-area: h2; }
   .descripcion-ubicacion p {
-    font-size: 1.3rem;
-    grid-area: p; }
+    font-size: 0.8rem;
+    grid-area: p;
+    height: 100%;
+    transition: 2s; }
+  .descripcion-ubicacion img {
+    width: 18em;
+    transition: 2s; }
   /* Producto */
   .list-producto ul {
     padding: 10px; }
@@ -503,6 +520,12 @@ input[type="button"]:hover {
   .titulo-servicios .servicios-img img {
     width: 100%;
     height: 30vh; }
+  .list-conect-styles {
+    position: relative;
+    left: 20%;
+    font-size: 0.8em; }
+  .nav-labs {
+    display: none; }
   /* Ubicacion */
   .titulo-ubicacion h1 {
     font-size: 3rem; }
@@ -515,10 +538,12 @@ input[type="button"]:hover {
     .descripcion-ubicacion h2 {
       font-size: 2em; }
     .descripcion-ubicacion p {
-      font-size: 1.3rem; }
+      font-size: 1.5rem;
+      transition: 2s; }
     .descripcion-ubicacion img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      display: none; }
   /* Producto */
   .titulo-producto h1 {
     font-size: 3rem;
