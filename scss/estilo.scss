@@ -348,15 +348,14 @@ input[type="button"]:hover {
   font-size: 5rem;
   padding-bottom: 10px;
 }
-.titulo-producto img {
-  width: 100%;
+.titulo-producto .carousel-item img {
+  width: 50%;
+  position: relative;
+  left: 25%;
 }
 .descripcion-producto h2 {
   text-align: center;
   font-size: 2rem;
-}
-.carousel-item img {
-  height: 38em;
 }
 
 .list-producto ul {
@@ -371,10 +370,14 @@ input[type="button"]:hover {
 }
 .list-producto p {
   width: 100%;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 .list-producto img {
   width: 500px;
+}
+.list-producto ul:nth-child(2) img {
+  width: 500px;
+  height: 400px;
 }
 /* footer */
 .footer {
@@ -509,13 +512,23 @@ input[type="button"]:hover {
 
   }
   /* Producto */
+  .titulo-producto .carousel-item img {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    height: 50%;
+    transition: 1s;
+  }
   .list-producto ul {
     padding: 10px;
   }
+
+  .list-producto p {
+    font-size: 1em;
+    text-align: jus;
+  }
   .list-producto img {
-    width: 100%;
-    max-width: 200px;
-    height: 100px;
+   display: none;
   }
 }
 /* CELULAR */
@@ -658,6 +671,13 @@ input[type="button"]:hover {
   .titulo-producto h1 {
     font-size: 3rem;
     padding-bottom: 10px;
+  }
+  .titulo-producto .carousel-item img {
+    width: 100%;
+    position: relative;
+    left: 0%;
+    height: 50%;
+    transition: 1s;
   }
   .list-producto {
   ul { 
